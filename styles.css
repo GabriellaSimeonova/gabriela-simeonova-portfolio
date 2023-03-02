@@ -8,7 +8,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    overflow-y:visible;
+    overflow-y: visible;
 }
 
 a {
@@ -23,7 +23,8 @@ a {
     --pinkColor: #DF4E8F;
     --background: #191919;
 }
-#home{
+
+#home {
     overflow: hidden
 }
 
@@ -34,7 +35,7 @@ body {
 }
 
 section {
-    height:fit-content;
+    height: fit-content;
     width: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -98,6 +99,7 @@ li {
 
 #home {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .home_photo {
@@ -113,16 +115,16 @@ li {
     color: var(--whiteColor);
     justify-content: center;
     position: relative;
-    padding: 2.5rem;
+    padding: 0rem;
     top: 15rem;
-    font-size:180%;
+    font-size: 180%;
     text-align: center;
 }
 
 .circle_image {
     height: 35rem;
     padding-top: 5rem;
-    margin-left: 3rem;
+    margin-left: -2rem;
 }
 
 .cv_button {
@@ -315,13 +317,14 @@ progress[value]::-webkit-progress-value {
 
 .course-name,
 .course-issued-by {
-    padding: 0.3rem;    
- 
+    padding: 0.3rem;
+
 }
 
-.course-issued-by{
+.course-issued-by {
     font-size: 1.3rem;
 }
+
 .course-name {
     font-size: 2rem;
 }
@@ -409,6 +412,20 @@ progress[value]::-webkit-progress-value {
     border-radius: 0.7rem;
 }
 
+section {
+    height: 100vh;
+}
+
+#courses {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#projects {
+    height: 100%;
+}
 
 /*modaal with dog picture*/
 .modal {
@@ -460,14 +477,14 @@ progress[value]::-webkit-progress-value {
     position: relative;
     font-size: 1rem;
     top: 0;
-    
+
 }
 
 .dogPic {
     width: 15rem;
 }
 
-.getSurpriseCont{
+.getSurpriseCont {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -475,7 +492,7 @@ progress[value]::-webkit-progress-value {
     gap: 1rem;
 }
 
-.imgCont{
+.imgCont {
     margin-top: 1rem;
     width: 50%;
     margin-left: auto;
@@ -484,7 +501,7 @@ progress[value]::-webkit-progress-value {
 
 /*RESPONSIVENESS*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
 
     /* For mobile phones: */
     html,
@@ -498,17 +515,21 @@ progress[value]::-webkit-progress-value {
         height: 100vh;
         overflow: hidden;
     }
-    #aboutme{
+
+    #aboutme {
         height: 120vh;
         overflow: hidden;
     }
-    #projects{
+
+    #projects {
         overflow: hidden;
     }
-    #courses{
-        height: 230vh;
+
+    #courses {
+        height: 200vh;
         overflow: hidden;
     }
+
     section {
         width: 100vw;
     }
@@ -527,7 +548,7 @@ progress[value]::-webkit-progress-value {
         position: fixed;
         z-index: 999;
         display: flex;
-        gap:45%;
+        gap: 45%;
 
     }
 
@@ -566,6 +587,7 @@ progress[value]::-webkit-progress-value {
         top: 11rem
     }
 
+
     .courses-container {
         align-items: center;
         justify-content: center;
@@ -573,6 +595,11 @@ progress[value]::-webkit-progress-value {
         padding-top: 10rem;
         color: var(--whiteColor);
         width: 100%;
+    }
+
+    #projects {
+        height: 100%;
+
     }
 
     .projects-container {
@@ -622,36 +649,25 @@ progress[value]::-webkit-progress-value {
         padding: 0.2rem;
         font-size: 0.8rem;
     }
+
     .modal-content {
         margin: 15% auto;
         margin-top: 50%;
         width: 80%;
     }
-    .imgCont{
+
+    .imgCont {
         width: 80%;
     }
-    .dogBtn{
+
+    .dogBtn {
         font-size: 10%;
     }
-    .getSurpriseCont{
+
+    .getSurpriseCont {
         gap: 0.5rem;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: baseline;
     }
-}
-
-section{
-    height: 100vh;
-}
-
-#courses{
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-#projects{
-    height: 100%;
 }
